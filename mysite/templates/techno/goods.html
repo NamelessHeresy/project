@@ -1,0 +1,13 @@
+{% extends 'techno/base.html' %}
+{% block content %}
+    {% for i in info %}
+        {% if i.pk == goods_id %}
+            <h1>Товар: {{i.title}}</h1>
+            <p>{{i.content}}</p>
+            <p>{{i.price}}</p>
+        {% else %}
+        {% endif %}
+    {% endfor %}
+
+
+{% endblock content %}

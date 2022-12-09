@@ -1,0 +1,7 @@
+{% extends 'techno/base.html' %}
+{% block content %}
+    <h1>Список категорий товаров</h1>
+    {% for c in cat %}
+        <a href="{{c.get_url}}">{{c.name}}</a>
+    {% endfor %}
+{% endblock content %}

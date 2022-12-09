@@ -1,0 +1,14 @@
+{% extends 'techno/base.html' %}
+{% block content %}
+            <h1>{{c.name = 1}}</h1>
+    {% for c in cat %}
+        {% if c.id == cat_id %}
+            <h1>{{c.name}}</h1>
+            <a href="{{i.get_url}}">{{c.title}}</a>
+            <p>{{c.content}}</p>
+            <p>{{c.price}}</p>
+        {% else %}
+        {% endif %}
+    {% endfor %}
+
+{% endblock content %}
